@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+}
+
+.view {
+    margin-right: 10px;
+}
+
+.view > i {
+    color: #2641d9;
+}
+
+.favorite > i {
+    color: rgb(225, 209, 209);
+}

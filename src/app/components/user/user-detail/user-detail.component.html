@@ -1,0 +1,33 @@
+<mat-card>
+    <mat-card-title>Detalhes de Usuário</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome"
+                [(ngModel)]="user.name" name="name" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Telefone"
+                [(ngModel)]="user.phone" name="telefone" disabled>
+        </mat-form-field>
+        
+        <mat-form-field>
+            <input matInput placeholder="Site"
+                [(ngModel)]="user.website" name="site" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Empresa"
+                [(ngModel)]="user.company.name" name="Empresa" disabled>
+        </mat-form-field>
+        Mapa de endereço do Usuário
+        <div id="iframeMap">
+
+        </div>
+        <button mat-raised-button (click)="saveFavorite()"
+            color="primary">
+                  Adicionar aos Favoritos
+             </button>
+    </form>
+    
+</mat-card>
